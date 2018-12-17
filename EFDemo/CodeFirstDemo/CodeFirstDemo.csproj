@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{94018DD3-BAE3-4FB9-8A3C-4D21AF213A00}</ProjectGuid>
+    <ProjectGuid>{6E83B026-A77B-464C-B5AE-19997E37FF6D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EFDemo</RootNamespace>
-    <AssemblyName>EFDemo</AssemblyName>
+    <RootNamespace>CodeFirstDemo</RootNamespace>
+    <AssemblyName>CodeFirstDemo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -67,52 +67,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KTStoreModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KTStoreModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="KTStoreModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KTStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="KTStoreModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KTStoreModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>KTStoreModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="KTStoreModel.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="KTStoreModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>KTStoreModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="KTStoreModel.edmx.diagram">
-      <DependentUpon>KTStoreModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="KTStoreModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>KTStoreModel.Context.cs</LastGenOutput>
-      <DependentUpon>KTStoreModel.edmx</DependentUpon>
+    <Content Include="KTStore.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="KTStoreModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>KTStoreModel.edmx</DependentUpon>
-      <LastGenOutput>KTStoreModel.cs</LastGenOutput>
+    <Content Include="KTStore_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>KTStore.mdf</DependentUpon>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
