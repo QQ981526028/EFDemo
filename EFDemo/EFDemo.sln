@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDemo", "EFDemo\EFDemo.csproj", "{94018DD3-BAE3-4FB9-8A3C-4D21AF213A00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDesignerDemo", "EFDesignerDemo\EFDesignerDemo.csproj", "{72035F5A-560E-44CA-BFA5-6B604B3D877A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{94018DD3-BAE3-4FB9-8A3C-4D21AF213A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94018DD3-BAE3-4FB9-8A3C-4D21AF213A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94018DD3-BAE3-4FB9-8A3C-4D21AF213A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72035F5A-560E-44CA-BFA5-6B604B3D877A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72035F5A-560E-44CA-BFA5-6B604B3D877A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72035F5A-560E-44CA-BFA5-6B604B3D877A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72035F5A-560E-44CA-BFA5-6B604B3D877A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
